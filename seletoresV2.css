@@ -1,0 +1,58 @@
+/* 1. SELETOR DE TAG */
+body {
+    background-color: #F9F5F6;
+    font-family: Arial, sans-serif;
+}
+
+/* 2. SELETOR DE ID */
+#topo-principal {
+    background-color: #F2BED1;
+    color: #333; 
+    padding: 20px;
+}
+
+/* 3. SELETOR DE CLASSE */
+.card {
+    background-color: #F8E8EE;
+    border-radius: 10px;
+    width: 200px;
+    padding: 15px;         /* Espaço entre a borda do card e o conteúdo interno*/
+    margin: 10px;          /* Espaço externo, empurrando outros cards para longe */
+    display: inline-block; /* Deixa as caixas uma ao lado da outra*/
+}
+
+/* 4. SELETOR DESCENDENTE */
+p span {
+    font-weight: bold;
+    color: #F2BED1;
+}
+
+/* 5. SELETOR DE AGRUPAMENTO */
+h1, h2 {
+    color: #333;
+}
+
+/* 6. SELETOR DE CLASSE ESPECÍFICA */
+.card.destaque {
+    border: 3px solid #FDCEDF;
+    transform: scale(1.05);
+}
+
+/* 7. PSEUDO-CLASSE :HOVER */
+button:hover {
+    background-color: #FDCEDF;
+    color: #333; 
+    cursor: pointer;
+}
+
+/* 8. PSEUDO-CLASSE :NTH-CHILD */
+nav ul li:nth-child(2) {
+    text-transform: uppercase;
+}
+
+/* A. Tirando as bolinhas da lista */
+nav ul {
+    list-style: none; /* Diz que a lista não é pra apresentar as bolinhas */
+    padding: 0;       /* Tira o recuo padrão do HTML */
+    margin: 0;        /* Tira a margem padrão do HTML */
+}
